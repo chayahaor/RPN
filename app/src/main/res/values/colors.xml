@@ -2,15 +2,15 @@
 <resources>
 
 
-
-    <color name="primaryColor">#00bcd4</color>
-    <color name="primaryLightColor">#62efff</color>
-    <color name="primaryDarkColor">#008ba3</color>
-    <color name="secondaryColor">#28b5f4</color>
-    <color name="secondaryLightColor">#72e7ff</color>
-    <color name="secondaryDarkColor">#0085c1</color>
+    <color name="primaryColor">#ff8a65</color>
+    <color name="primaryLightColor">#ffbb93</color>
+    <color name="primaryDarkColor">#c75b39</color>
+    <color name="secondaryColor">#a1887f</color>
+    <color name="secondaryLightColor">#d3b8ae</color>
+    <color name="secondaryDarkColor">#725b53</color>
     <color name="primaryTextColor">#000000</color>
-    <color name="secondaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+
 
     <!-- For colored text; default is black/dark-gray (Day) or white/light-gray (Night) -->
     <color name="primaryTextColoredColor">@color/primaryDarkColor</color>
@@ -20,5 +20,5 @@
     <color name="backgroundColoredColor">@color/primaryLightColor</color>
 
     <!-- Used for Splash Screen background, and elsewhere as needed -->
-    <color name="backgroundDefaultColor">@android:color/background_light</color>
+    <color name="backgroundDefaultColor">@color/secondaryDarkColor</color>
 </resources>
