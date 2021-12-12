@@ -1,36 +1,32 @@
 package com.example.rpn;
 
 import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
-import com.example.rpn.databinding.ActivityMainBinding;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import java.util.Stack;
 
 
 public class MainActivity extends AppCompatActivity {
-
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityMainBinding binding;
-
+//TODO: Fix the fact that output is always "ERROR"
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setupToolbar();
-        setupFAB();
+
+        Button yourButton = (Button) findViewById(R.id.buttonCompute);
+        yourButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                compute();
+            }
+        });
     }
 
     private void setupToolbar() {
@@ -38,20 +34,71 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    private void setupFAB() {
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //mGame.startNewGame();
+    public void compute() {
+        EditText text = (EditText) findViewById(R.id.textInput);
+        String expression = text.getText().toString();
+        boolean flagError = false;
+        String errorType = "Error";
+        Stack<Double> stackExpression = new Stack<>();
+        double newNum = 0.0;
+        String[] splitExpression = expression.split("\\s+");
+        for (String s : splitExpression) {
+            if (s.equals("+") || s.equals("-") || s.equals("/") || s.equals("*")) {
+                try {
+                    double num1 = stackExpression.pop();
+                    double num2 = stackExpression.pop();
+
+                    switch (s) {
+
+                        case "-":
+                            newNum = num2 - num1;
+                            break;
+                        case "+":
+                            newNum = num2 + num1;
+                            break;
+                        case "/":
+                            if (num1 != 0) {
+                                newNum = num2 / num1;
+                            } else {
+                                flagError = true;
+                                errorType = "Cannot divide by zero";
+                            }
+                            break;
+                        case "*":
+                            newNum = num2 * num1;
+                            break;
+                    }
+
+                    stackExpression.push(newNum);
+
+
+                } catch (Exception e) {
+                    flagError = true;
+                    errorType = "Error, please try again";
+                }
+
+            } else {
+                try {
+                    Double num = Double.parseDouble(s);
+                    stackExpression.push(num);
+                } catch (NumberFormatException ex) {
+                    flagError = true;
+                    errorType = "Syntax error";
+                }
             }
-        });
+
+        }
+        Button button = (Button)findViewById(R.id.result);
+
+        if (!flagError && stackExpression.empty()) {
+            String result = String.format("%.2f", stackExpression.pop());
+            button.setText(result);
+        } else {
+            button.setText(errorType);
+        }
+
+
     }
-
-
-
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
