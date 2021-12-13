@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setupToolbar();
 
-        Button yourButton = (Button) findViewById(R.id.buttonCompute);
-        yourButton.setOnClickListener(new View.OnClickListener() {
+        Button computeButton =  findViewById(R.id.buttonCompute);
+        computeButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 compute();
             }
@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void compute() {
-        EditText text = (EditText) findViewById(R.id.textInput);
+        EditText text = findViewById(R.id.textInput);
         String expression = text.getText().toString();
         boolean flagError = false;
-        String errorType = "Error";
+        String errorType = "";
         Stack<Double> stackExpression = new Stack<>();
         double newNum = 0.0;
         String[] splitExpression = expression.split("\\s+");
@@ -74,29 +74,29 @@ public class MainActivity extends AppCompatActivity {
 
                 } catch (Exception e) {
                     flagError = true;
-                    errorType = "Error, please try again";
+                    errorType = e.getMessage();
                 }
 
             } else {
                 try {
                     Double num = Double.parseDouble(s);
                     stackExpression.push(num);
-                } catch (NumberFormatException ex) {
+                } catch (Exception e) {
                     flagError = true;
-                    errorType = "Syntax error";
+                    errorType = e.getMessage();
                 }
             }
 
         }
-        Button button = (Button)findViewById(R.id.result);
+        Button resultButton = findViewById(R.id.result);
 
-        if (!flagError && stackExpression.empty()) {
+        if (!flagError/* && stackExpression.empty()*/) {
             String result = String.format("%.2f", stackExpression.pop());
-            button.setText(result);
-        } else {
-            button.setText(errorType);
-        }
+            resultButton.setText(result);
 
+        } else {
+            resultButton.setText(errorType);
+        }
 
     }
 
