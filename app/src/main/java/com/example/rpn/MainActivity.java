@@ -14,14 +14,13 @@ import java.util.Stack;
 
 
 public class MainActivity extends AppCompatActivity {
-//TODO: Fix the fact that output is always "ERROR"
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setupToolbar();
 
-        Button computeButton =  findViewById(R.id.buttonCompute);
+        Button computeButton = findViewById(R.id.buttonCompute);
         computeButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 compute();
@@ -89,9 +88,13 @@ public class MainActivity extends AppCompatActivity {
 
         }
         Button resultButton = findViewById(R.id.result);
-
-        if (!flagError/* && stackExpression.empty()*/) {
-            String result = String.format("%.2f", stackExpression.pop());
+        String result = "";
+        try {
+            result = String.format("%.2f", stackExpression.pop());
+        } catch (Exception e) {
+            errorType = "Whoops... Try again";
+        }
+        if (!flagError && stackExpression.empty()) {
             resultButton.setText(result);
 
         } else {
