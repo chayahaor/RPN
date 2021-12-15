@@ -11,4 +11,5 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="instructions">Please enter text in RPN format for us to calculate!</string>
     <string name="enter_your_rpn_here">Enter your RPN here</string>
+    <string name="click_to_compute">Click to compute</string>
 </resources>
