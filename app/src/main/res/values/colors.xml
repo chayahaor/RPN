@@ -20,5 +20,5 @@
     <color name="backgroundColoredColor">@color/primaryLightColor</color>
 
     <!-- Used for Splash Screen background, and elsewhere as needed -->
-    <color name="backgroundDefaultColor">@color/secondaryDarkColor</color>
+    <color name="colorDefaultBackground">@color/secondaryLightColor</color>
 </resources>

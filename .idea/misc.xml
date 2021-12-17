@@ -4,6 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/chaya/AndroidStudioProjects/RPN/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/drawable-hdpi/splash_background.xml" value="0.1" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/drawable-mdpi/splash_background.xml" value="0.1" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/drawable-nodpi-v23/splash_background.xml" value="0.1" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/drawable-nodpi/splash_background.xml" value="0.1" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/drawable-xhdpi/splash_background.xml" value="0.1" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/drawable-xxhdpi/splash_background.xml" value="0.1" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/drawable-xxxhdpi/splash_background.xml" value="0.1" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/drawable/splash_background.xml" value="0.1" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/layout/activity_main.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/layout/multi_include_background.xml" value="0.10235507246376811" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.16944444444444445" />
       </map>
     </option>
   </component>

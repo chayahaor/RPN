@@ -5,6 +5,7 @@
     android:viewportWidth="108"
     android:viewportHeight="108"
     android:tint="#000000">
+
   <group android:scaleX="0.15525"
       android:scaleY="0.15525"
       android:translateX="29.16"
