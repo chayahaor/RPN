@@ -10,10 +10,12 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import java.util.ArrayList;
 import java.util.Stack;
 
 
 public class MainActivity extends AppCompatActivity {
+    public static ArrayList<String> resultsRecords=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         EditText text = findViewById(R.id.textInput);
         String expression = text.getText().toString();
         boolean flagError = false;
-        String errorType = "";
         Stack<Double> stackExpression = new Stack<>();
         double newNum = 0.0;
         String[] splitExpression = expression.split("\\s+");
@@ -60,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
                                 newNum = num2 / num1;
                             } else {
                                 flagError = true;
-                                errorType = "Cannot divide by zero";
                             }
                             break;
                         case "*":
@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
 
                 } catch (Exception e) {
                     flagError = true;
-                    errorType = e.getMessage();
                 }
 
             } else {
@@ -82,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
                     stackExpression.push(num);
                 } catch (Exception e) {
                     flagError = true;
-                    errorType = e.getMessage();
                 }
             }
 
@@ -92,16 +90,17 @@ public class MainActivity extends AppCompatActivity {
         try {
             result = String.format("%.2f", stackExpression.pop());
         } catch (Exception e) {
-            errorType = "Whoops... Try again";
+            flagError=true;
         }
         if (!flagError && stackExpression.empty()) {
             resultButton.setText(result);
+            resultsRecords.add(result);
 
         } else {
-            resultButton.setText(errorType);
+            resultButton.setText(R.string.error_message);
         }
-
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
