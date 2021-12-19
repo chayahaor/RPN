@@ -7,6 +7,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <string name="title_activity_settings">SettingsActivity</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="instructions">Please enter text in RPN format for us to calculate!</string>
@@ -14,4 +15,6 @@
     <string name="click_to_compute">Click to compute</string>
     <string name="background_image">background image</string>
     <string name="error_message">Whoops... Try again</string>
+
+
 </resources>

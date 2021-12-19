@@ -1,0 +1,14 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceCategory app:title="@string/app_name">
+    <SwitchPreferenceCompat
+        app:key="keepRPN"
+        app:title="Remember RPN"
+        app:summary="Keep tabs on the RPN expressions used"/>
+
+    <Preference
+        app:key="about"
+        app:title="About the App"
+        app:summary="Learn about RPN!"/>
+</PreferenceCategory>
+
+</PreferenceScreen>
