@@ -2,6 +2,11 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 <item android:drawable="@color/colorDefaultBackground"/>
     <item android:drawable="@mipmap/ic_launcher"
-            android:gravity="center" />
+        android:id="@+id/splash_screen"
+        android:width="350dp"
+        android:height="350dp"
+        android:gravity="center" />
+
+
 
 </layer-list>
