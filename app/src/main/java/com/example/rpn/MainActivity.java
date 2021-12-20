@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -16,7 +17,8 @@ import java.util.Stack;
 
 
 public class MainActivity extends AppCompatActivity {
-    public static ArrayList<String> resultsRecords=new ArrayList<>();
+    public static ArrayList<String> resultsRecords = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,19 +88,19 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
-        Button resultButton = findViewById(R.id.result);
+        TextView resultsBox = findViewById(R.id.result);
         String result = "";
         try {
             result = String.format("%.2f", stackExpression.pop());
         } catch (Exception e) {
-            flagError=true;
+            flagError = true;
         }
         if (!flagError && stackExpression.empty()) {
-            resultButton.setText(result);
+            resultsBox.setText(result);
             resultsRecords.add(result);
 
         } else {
-            resultButton.setText(R.string.error_message);
+            resultsBox.setText(R.string.error_message);
         }
     }
 
@@ -112,19 +114,21 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (item.getItemId() == R.id.action_settings) {
+            // User chose the "Settings" item, show the app settings UI...
             Intent intent = new Intent(this, SettingsActivity.class);
             startActivity(intent);
             return true;
         }
-
-        return super.onOptionsItemSelected(item);
+        /* else if(item.getItemId() == R.id.aboutUs)*/ //TODO: what to happen when click about us option
+        //TODO: unsure what the ID is for the about page, because it was not yet created.
+        else {
+            // If we got here, the user's action was not recognized.
+            // Invoke the superclass to handle it.
+            return super.onOptionsItemSelected(item);
+        }
     }
+
 
 }
