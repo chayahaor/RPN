@@ -20,7 +20,8 @@
     </style>
 
     <style name="Theme.RPN.NoActionBar.SplashScreenTheme">
-        <item name="android:background">@drawable/splash_background</item>
+       <item name="android:background">@drawable/splash_background</item>
+
     </style>
 
     <style name="Theme.RPN.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

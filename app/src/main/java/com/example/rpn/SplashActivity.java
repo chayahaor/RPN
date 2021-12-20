@@ -18,12 +18,13 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        ImageView image= (ImageView) findViewById (R.id.splash_screen);
-//        image.animate().rotation(2160f).setDuration(3000);
+
         AppCompatDelegate.setDefaultNightMode
                 (Build.VERSION.SDK_INT < 28 ? MODE_NIGHT_AUTO_BATTERY : MODE_NIGHT_FOLLOW_SYSTEM);
 
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
+
+
         finish();
     }
 }
