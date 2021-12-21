@@ -121,8 +121,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
-        /* else if(item.getItemId() == R.id.aboutUs)*/ //TODO: what to happen when click about us option
-        //TODO: unsure what the ID is for the about page, because it was not yet created.
+        else if (item.getItemId()==R.id.otherRPN){
+            // User chose the "Other RPN" item, show the previous RPN expressions...
+            Intent intent = new Intent(this, OtherRPN.class);
+            startActivity(intent);
+            return true;
+        }
         else {
             // If we got here, the user's action was not recognized.
             // Invoke the superclass to handle it.
