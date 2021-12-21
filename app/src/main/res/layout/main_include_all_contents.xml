@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/content_main">
+
+    <include layout="@layout/main_include_expression_prompt" />
+    <include layout="@layout/main_include_compute_button" />
+    <include layout="@layout/main_include_result" />
+    <include layout="@layout/main_include_clear_button" />
+</merge>

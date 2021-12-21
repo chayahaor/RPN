@@ -8,12 +8,6 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
-    <include layout="@layout/main_include_expression_prompt" />
-
-    <include layout="@layout/main_include_compute_button" />
-
-    <include layout="@layout/main_include_result" />
-
-    <include layout="@layout/main_include_clear_button" />
+    <include layout="@layout/main_include_all_contents" />
 
 </LinearLayout>

@@ -16,7 +16,7 @@
     <string name="click_to_compute">Click to compute</string>
     <string name="background_image">background image</string>
     <string name="error_message">Whoops… Try again</string>
-    <string name="click_to_clear">Click to Clear</string>
+    <string name="click_to_clear">Clear</string>
     <string name="menu_previous_expressions">Previous Expressions</string>
     <string name="menu_about_rpn">About RPN</string>
     <string name="about_RPN">RPN, also known as Reverse Polish Notation, is a method of computing expressions.</string>
