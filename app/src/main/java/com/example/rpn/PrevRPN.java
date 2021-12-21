@@ -16,6 +16,10 @@ public class PrevRPN extends AppCompatActivity {
         setContentView(R.layout.activity_other_rpn);
         ArrayList<String> results = MainActivity.resultsRecords;
         TextView resultsBox = findViewById(R.id.textView);
-        resultsBox.setText(results.toString());
+        String stringResults="";
+        for (int i=0;i<results.size(); i++){
+            stringResults=stringResults+"\n"+results.get(i);
+        }
+        resultsBox.setText(stringResults);
     }
 }

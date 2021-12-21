@@ -9,9 +9,6 @@ import androidx.appcompat.app.AppCompatDelegate;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.animation.Animation;
-import android.view.animation.RotateAnimation;
-import android.widget.ImageView;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -23,8 +20,6 @@ public class SplashActivity extends AppCompatActivity {
                 (Build.VERSION.SDK_INT < 28 ? MODE_NIGHT_AUTO_BATTERY : MODE_NIGHT_FOLLOW_SYSTEM);
 
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
-
-
         finish();
     }
 }
