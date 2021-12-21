@@ -10,8 +10,15 @@
         <entry key="..\:/Users/chaya/AndroidStudioProjects/RPN/app/src/main/res/layout/settings_activity.xml" value="0.1" />
         <entry key="..\:/Users/chaya/AndroidStudioProjects/RPN/app/src/main/res/xml/root_preferences.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/drawable-nodpi/splash_background.xml" value="0.1" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/layout-land/layout.xml" value="0.1" />
         <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/layout/content_main.xml" value="0.22" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/layout/activity_other_rpn.xml" value="0.1322463768115942" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/layout/content_main.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/layout/main_include_compute_button.xml" value="0.1322463768115942" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/layout/main_include_expression_prompt.xml" value="0.1322463768115942" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/layout/main_include_result.xml" value="0.1322463768115942" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/layout/multi_include_background.xml" value="0.1408514492753623" />
+        <entry key="..\:/Users/sarab/AndroidStudioProjects/RPN/app/src/main/res/layout/settings_activity.xml" value="0.1322463768115942" />
       </map>
     </option>
   </component>

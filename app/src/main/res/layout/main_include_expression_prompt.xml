@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textInput"
+    android:layout_width="272dp"
+    android:layout_height="75dp"
+    android:layout_marginTop="16dp"
+    android:background="@color/secondaryColor"
+    android:gravity="center"
+    android:hint="@string/enter_your_rpn_here"
+    android:inputType="text"
+    tools:showIn="@layout/content_main" />

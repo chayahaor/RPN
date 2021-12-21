@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttonCompute"
+    android:layout_width="252dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="32dp"
+    android:gravity="center"
+    android:text="@string/click_to_compute"
+    tools:showIn="@layout/content_main" />
