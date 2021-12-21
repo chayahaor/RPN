@@ -8,7 +8,7 @@ import android.widget.TextView;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class prevRPN extends AppCompatActivity {
+public class PrevRPN extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

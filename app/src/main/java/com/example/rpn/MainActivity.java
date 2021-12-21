@@ -31,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
                 compute();
             }
         });
+
+        Button clearButton = findViewById(R.id.clear_button);
+        clearButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                TextView tvInput = findViewById(R.id.textInput);
+                tvInput.setText("");
+            }
+        });
     }
 
     private void setupToolbar() {
@@ -123,7 +131,13 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (item.getItemId()==R.id.otherRPN){
             // User chose the "Other RPN" item, show the previous RPN expressions...
-            Intent intent = new Intent(this, prevRPN.class);
+            Intent intent = new Intent(this, PrevRPN.class);
+            startActivity(intent);
+            return true;
+        }
+        else if (item.getItemId()==R.id.about_rpn){
+            // User chose the "About RPN" item, show about RPN...
+            Intent intent = new Intent(this, AboutRPN.class);
             startActivity(intent);
             return true;
         }

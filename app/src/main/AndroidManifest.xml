@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RPN">
         <activity
-            android:name=".prevRPN"
+            android:name=".PrevRPN"
             android:exported="false"
             android:label="Previous RPN Expressions"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AboutRPN"
             android:exported="false"

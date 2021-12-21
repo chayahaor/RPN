@@ -10,7 +10,12 @@
 
     <item
         android:id="@+id/otherRPN"
-        android:title="Previous Expressions"
+        android:title="@string/menu_previous_expressions"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/about_rpn"
+        android:title="@string/menu_about_rpn"
         app:showAsAction="never"/>
 
 </menu>

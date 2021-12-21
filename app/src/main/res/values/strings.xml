@@ -1,20 +1,25 @@
 <resources>
     <string name="app_name">RPN</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
+    <!--&lt;!&ndash; Strings used for fragments for navigation &ndash;&gt;
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
+-->
     <string name="title_activity_settings">SettingsActivity</string>
-    <string name="hello_first_fragment">Hello first fragment</string>
+    <!--<string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    -->
     <string name="instructions">Please enter text in RPN format for us to calculate!</string>
     <string name="enter_your_rpn_here">Enter your RPN here</string>
     <string name="click_to_compute">Click to compute</string>
     <string name="background_image">background image</string>
-    <string name="error_message">Whoops... Try again</string>
+    <string name="error_message">Whoops… Try again</string>
+    <string name="click_to_clear">Click to Clear</string>
+    <string name="menu_previous_expressions">Previous Expressions</string>
+    <string name="menu_about_rpn">About RPN</string>
+    <string name="about_RPN">RPN, also known as Reverse Polish Notation, is a method of computing expressions.</string>
 
 
 </resources>

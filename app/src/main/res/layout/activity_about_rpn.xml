@@ -7,7 +7,7 @@ android:layout_height="match_parent"
 tools:context=".AboutRPN">
 
 
-    <Button
+    <TextView
         android:id="@+id/about"
         android:layout_width="285dp"
         android:layout_height="551dp"
@@ -15,6 +15,6 @@ tools:context=".AboutRPN">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="RPN is also known as Reverse Polish Notation"
+        android:text="@string/about_RPN"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

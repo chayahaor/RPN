@@ -1,8 +1,6 @@
 package com.example.rpn;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,20 +33,5 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        if (item.getItemId()==R.id.action_settings){
-            // User chose the "About us" item, show about us UI...
-            Intent intent = new Intent(this, AboutRPN.class);
-            startActivity(intent);
-            return true;
-        }
-        else {
-            // If we got here, the user's action was not recognized.
-            // Invoke the superclass to handle it.
-            return super.onOptionsItemSelected(item);
-        }
-    }
 
 }
