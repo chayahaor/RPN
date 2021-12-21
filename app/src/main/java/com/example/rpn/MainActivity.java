@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (item.getItemId()==R.id.otherRPN){
             // User chose the "Other RPN" item, show the previous RPN expressions...
-            Intent intent = new Intent(this, OtherRPN.class);
+            Intent intent = new Intent(this, prevRPN.class);
             startActivity(intent);
             return true;
         }
