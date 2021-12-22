@@ -2,14 +2,21 @@
 <resources>
 
 
-    <color name="primaryColor">#00796b</color>
-    <color name="primaryLightColor">#48a999</color>
-    <color name="primaryDarkColor">#004c40</color>
-    <color name="secondaryColor">#37474f</color>
-    <color name="secondaryLightColor">#62727b</color>
-    <color name="secondaryDarkColor">#102027</color>
+    <color name="primaryColor">#37474f</color>
+
+    <color name="primaryLightColor">#62727b</color>
+
+    <color name="primaryDarkColor">#102027</color>
+
+    <color name="secondaryColor">#eeeeee</color>
+
+    <color name="secondaryLightColor">#ffffff</color>
+
+    <color name="secondaryDarkColor">#bcbcbc</color>
+
     <color name="primaryTextColor">#ffffff</color>
-    <color name="secondaryTextColor">#ffffff</color>
+
+    <color name="secondaryTextColor">#000000</color>
 
 
     <!-- For colored text; default is black/dark-gray (Day) or white/light-gray (Night) -->

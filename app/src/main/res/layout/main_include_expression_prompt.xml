@@ -9,4 +9,6 @@
     android:gravity="center"
     android:hint="@string/enter_your_rpn_here"
     android:inputType="text"
+    android:textColorHint="@color/secondaryTextColor"
+    android:textColor="@color/secondaryTextColor"
     tools:showIn="@layout/content_main" />
