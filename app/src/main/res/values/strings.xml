@@ -11,7 +11,11 @@
     <string name="click_to_clear">Clear</string>
     <string name="menu_previous_expressions">Previous Expressions</string>
     <string name="menu_about_rpn">About RPN</string>
-    <string name="about_RPN">RPN, also known as Reverse Polish Notation, is a method of computing expressions.</string>
+    <string name="about_RPN">Reverse Polish notation (RPN), also known as reverse Łukasiewicz notation,
+        Polish postfix notation or simply postfix notation, is a mathematical notation
+        in which operators follow their operands, in contrast to Polish notation (PN),
+        in which operators precede their operands. It does not need any parentheses as
+        long as each operator has a fixed number of operands.</string>
 
 
     <string name="night_mode_key">Night Mode</string>

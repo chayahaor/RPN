@@ -11,4 +11,5 @@
     android:inputType="text"
     android:textColorHint="@color/secondaryTextColor"
     android:textColor="@color/secondaryTextColor"
-    tools:showIn="@layout/content_main" />
+    tools:showIn="@layout/content_main"
+    />
