@@ -3,6 +3,9 @@ package com.example.rpn;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.lang.reflect.Array;
@@ -21,5 +24,15 @@ public class PrevRPN extends AppCompatActivity {
             stringResults=stringResults+"\n"+ (i + 1) + ". "  + results.get(i);
         }
         resultsBox.setText(stringResults);
+        resultsBox.setMovementMethod(new ScrollingMovementMethod());
+
+        Button resetButton = findViewById(R.id.reset_button);
+        resetButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                MainActivity.resultsRecords.clear();
+                String stringResults="";
+                resultsBox.setText(stringResults);
+            }
+        });
     }
 }

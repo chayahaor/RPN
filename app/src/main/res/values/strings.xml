@@ -22,6 +22,7 @@
     <string name="night_mode_title">Night/Dark Mode</string>
     <string name="night_mode_off">Never use Night/Dark Mode</string>
     <string name="night_mode_on">Use Night/Dark Mode when enabled in Settings</string>
+    <string name="reset_history">Reset History</string>
 
 
 </resources>

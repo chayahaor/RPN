@@ -19,7 +19,7 @@
     <color name="secondaryTextColor">#000000</color>
 
 
-    <!-- For colored text; default is black/dark-gray (Day) or white/light-gray (Night) -->
+    <!-- For colored text -->
     <color name="primaryTextColoredColor">@color/primaryDarkColor</color>
     <color name="secondaryTextColoredColor">@color/primaryColor</color>
 
@@ -27,5 +27,5 @@
     <color name="backgroundColoredColor">@color/primaryLightColor</color>
 
     <!-- Used for Splash Screen background, and elsewhere as needed -->
-    <color name="colorDefaultBackground">@color/secondaryLightColor</color>
+    <color name="colorDefaultBackground">@color/primaryDarkColor</color>
 </resources>

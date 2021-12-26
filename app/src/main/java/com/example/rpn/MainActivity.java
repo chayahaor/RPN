@@ -3,7 +3,10 @@ package com.example.rpn;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -60,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         double newNum = 0.0;
         String[] splitExpression = expression.split("\\s+");
         for (String s : splitExpression) {
-            if (s.equals("+") || s.equals("-") || s.equals("/") || s.equals("*")) {
+            if (s.equals("+") || s.equals("-") || s.equals("/") || s.equals("*") ) {
                 try {
                     double num1 = stackExpression.pop();
                     double num2 = stackExpression.pop();
@@ -111,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if (!flagError && stackExpression.empty()) {
             resultsBox.setText(result);
-            resultsRecords.add(result);
+            resultsRecords.add(expression + " = " + result);
 
         } else {
             resultsBox.setText(R.string.error_message);
@@ -123,6 +126,17 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
+        //set color so that visible
+        for(int i = 0; i<menu.size(); i++ ){
+            MenuItem menuItem = menu.getItem(i);
+            SpannableString spannable = new SpannableString(
+                    menu.getItem(i).getTitle().toString()
+            );
+            spannable.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.secondaryDarkColor)),
+                    0, spannable.length(),0);
+            menuItem.setTitle(spannable);
+        }
         return true;
     }
 
