@@ -10,19 +10,19 @@
 
     <include layout="@layout/main_include_expression_prompt" />
     <include layout="@layout/main_include_compute_button"
-        android:layout_width="272dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin48"
+        android:layout_marginTop="@dimen/margin16"/>
 
     <include layout="@layout/main_include_result"
-        android:layout_width="431dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="32dp" />
+        android:layout_width="@dimen/margin250"
+        android:layout_height="@dimen/margin72"
+        android:layout_marginTop="@dimen/margin16" />
 
     <include layout="@layout/main_include_clear_button"
-        android:layout_marginTop="8dp"
-        android:layout_height="50dp"
-        android:layout_width="100dp" />
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_height="@dimen/margin48"
+        android:layout_width="wrap_content" />
 
 
 </LinearLayout>

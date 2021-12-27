@@ -15,7 +15,7 @@
         Polish postfix notation or simply postfix notation, is a mathematical notation
         in which operators follow their operands, in contrast to Polish notation (PN),
         in which operators precede their operands. It does not need any parentheses as
-        long as each operator has a fixed number of operands.</string>
+        long as each operator has a fixed number of operands.     ~~~Wikipedia </string>
 
 
     <string name="night_mode_key">Night Mode</string>
